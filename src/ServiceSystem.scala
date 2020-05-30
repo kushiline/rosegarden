@@ -25,7 +25,6 @@ class ServiceWrapper(private val inner: Service) extends Service {
   val logger = Logger(name)
 
   override def name = inner.name
-  override def version = inner.version
 
   override def init = {
     logger.info("Initializing")
