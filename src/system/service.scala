@@ -1,7 +1,7 @@
 package com.izabyl.rosegarden.system;
 
 trait Interface
-trait Method[-R] extends Interface
+trait Method[R] extends Interface
 // Each service will declare an type that extends this
 // case classes will extend that type
 // server will pattern match on those case classes
